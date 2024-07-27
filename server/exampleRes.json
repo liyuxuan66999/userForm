@@ -1,0 +1,424 @@
+{
+    "results": [
+        {
+            "name": "Abu Abbas",
+            "matchCount": 5,
+            "matches": [
+                {
+                    "score": 100,
+                    "matchSummary": {
+                        "matchFields": [
+                            {
+                                "similarity": "STRONG",
+                                "fieldName": "Name",
+                                "caseField": "Abu Abbas",
+                                "sanctionField": "Abu ABBAS",
+                                "sanctionFieldNote": "Primary"
+                            },
+                            {
+                                "similarity": "STRONG",
+                                "fieldName": "DOB",
+                                "caseField": "1948-12-10",
+                                "sanctionField": "10 Dec 1948"
+                            }
+                        ]
+                    },
+                    "sanction": {
+                        "id": "sdn-abu-abbas",
+                        "type": "Person",
+                        "categories": [
+                            "sanction"
+                        ],
+                        "source": "SDN",
+                        "sourceId": "2674",
+                        "name": "Abu ABBAS",
+                        "nameFormatted": "abu abbas",
+                        "entityLink": "https://www.ofac-api.com/entities/sdn-abu-abbas",
+                        "alias": [
+                            {
+                                "id": "1795",
+                                "name": "Muhammad ZAYDAN",
+                                "firstName": "Muhammad",
+                                "lastName": "ZAYDAN",
+                                "comment": "strong"
+                            }
+                        ],
+                        "programs": [
+                            "SDGT"
+                        ],
+                        "personDetails": {
+                            "firstName": "Abu",
+                            "lastName": "ABBAS",
+                            "title": "Director of PALESTINE LIBERATION FRONT - ABU ABBAS FACTION",
+                            "birthDates": [
+                                "10 Dec 1948"
+                            ],
+                            "citizenships": [],
+                            "nationalities": [],
+                            "positions": []
+                        }
+                    }
+                },
+                {
+                    "score": 99,
+                    "matchSummary": {
+                        "matchFields": [
+                            {
+                                "similarity": "STRONG",
+                                "fieldName": "Name",
+                                "caseField": "Abu Abbas",
+                                "sanctionField": "Abdul Hussein ABBAS",
+                                "sanctionFieldNote": "Primary"
+                            }
+                        ]
+                    },
+                    "sanction": {
+                        "id": "sdn-abdul-hussein-abbas",
+                        "type": "Person",
+                        "categories": [
+                            "sanction"
+                        ],
+                        "source": "SDN",
+                        "sourceId": "8307",
+                        "name": "Abdul Hussein ABBAS",
+                        "nameFormatted": "abdul hussein abbas",
+                        "entityLink": "https://www.ofac-api.com/entities/sdn-abdul-hussein-abbas",
+                        "programs": [
+                            "IRAQ2"
+                        ],
+                        "addresses": [
+                            {
+                                "id": "8175",
+                                "country": "Italy",
+                                "fullAddress": "Italy"
+                            }
+                        ],
+                        "personDetails": {
+                            "firstName": "Abdul Hussein",
+                            "lastName": "ABBAS",
+                            "birthDates": [],
+                            "citizenships": [],
+                            "nationalities": [],
+                            "positions": []
+                        }
+                    }
+                },
+                {
+                    "score": 99,
+                    "matchSummary": {
+                        "matchFields": [
+                            {
+                                "similarity": "STRONG",
+                                "fieldName": "Name",
+                                "caseField": "Abu Abbas",
+                                "sanctionField": "Abdul Aziz ABBASIN",
+                                "sanctionFieldNote": "Primary"
+                            }
+                        ]
+                    },
+                    "sanction": {
+                        "id": "sdn-abdul-aziz-abbasin",
+                        "type": "Person",
+                        "categories": [
+                            "sanction"
+                        ],
+                        "source": "SDN",
+                        "sourceId": "12924",
+                        "name": "Abdul Aziz ABBASIN",
+                        "nameFormatted": "abdul aziz abbasin",
+                        "entityLink": "https://www.ofac-api.com/entities/sdn-abdul-aziz-abbasin",
+                        "alias": [
+                            {
+                                "id": "14376",
+                                "name": "Abdul Aziz MAHSUD",
+                                "firstName": "Abdul Aziz",
+                                "lastName": "MAHSUD",
+                                "comment": "strong"
+                            }
+                        ],
+                        "programs": [
+                            "SDGT"
+                        ],
+                        "personDetails": {
+                            "firstName": "Abdul Aziz",
+                            "lastName": "ABBASIN",
+                            "birthDates": [
+                                "1969"
+                            ],
+                            "citizenships": [],
+                            "nationalities": [],
+                            "positions": []
+                        }
+                    }
+                },
+                {
+                    "score": 100,
+                    "matchSummary": {
+                        "matchFields": [
+                            {
+                                "similarity": "STRONG",
+                                "fieldName": "Name",
+                                "caseField": "Abu Abbas",
+                                "sanctionField": "'Abbas Abu-Ahmad FAWWAZ",
+                                "sanctionFieldNote": "Alias"
+                            },
+                            {
+                                "similarity": "SIMILAR",
+                                "fieldName": "Citizenship",
+                                "caseField": "Senegal",
+                                "sanctionField": "Senegal"
+                            }
+                        ]
+                    },
+                    "sanction": {
+                        "id": "sdn-abbas-loutfe-fawaz",
+                        "type": "Person",
+                        "categories": [
+                            "sanction"
+                        ],
+                        "source": "SDN",
+                        "sourceId": "13416",
+                        "name": "Abbas Loutfe FAWAZ",
+                        "nameFormatted": "abbas loutfe fawaz",
+                        "entityLink": "https://www.ofac-api.com/entities/sdn-abbas-loutfe-fawaz",
+                        "alias": [
+                            {
+                                "id": "22913",
+                                "name": "Abbas FOUAZ",
+                                "firstName": "Abbas",
+                                "lastName": "FOUAZ",
+                                "comment": "strong"
+                            },
+                            {
+                                "id": "23333",
+                                "name": "'Abbas Abu-Ahmad FAWWAZ",
+                                "firstName": "'Abbas Abu-Ahmad",
+                                "lastName": "FAWWAZ",
+                                "comment": "strong"
+                            }
+                        ],
+                        "additionalSanctions": [
+                            "Subject to Secondary Sanctions Pursuant to the Hizballah Financial Sanctions Regulations"
+                        ],
+                        "programs": [
+                            "SDGT"
+                        ],
+                        "addresses": [
+                            {
+                                "id": "23136",
+                                "city": "Dakar",
+                                "country": "Senegal",
+                                "fullAddress": "Dakar, Senegal"
+                            }
+                        ],
+                        "identifications": [
+                            {
+                                "id": "8317",
+                                "type": "Personal ID Card",
+                                "idNumber": "096574S",
+                                "country": "Senegal"
+                            }
+                        ],
+                        "personDetails": {
+                            "firstName": "Abbas Loutfe",
+                            "lastName": "FAWAZ",
+                            "birthDates": [
+                                "07 Aug 1978"
+                            ],
+                            "citizenships": [
+                                "Lebanon",
+                                "Senegal"
+                            ],
+                            "nationalities": [],
+                            "positions": []
+                        }
+                    }
+                },
+                {
+                    "score": 99,
+                    "matchSummary": {
+                        "matchFields": [
+                            {
+                                "similarity": "STRONG",
+                                "fieldName": "Name",
+                                "caseField": "Abu Abbas",
+                                "sanctionField": "ABU AL-ABBAS",
+                                "sanctionFieldNote": "Alias"
+                            }
+                        ]
+                    },
+                    "sanction": {
+                        "id": "sdn-adil-abduh-fari-uthman-al-dhubhani",
+                        "type": "Person",
+                        "categories": [
+                            "sanction"
+                        ],
+                        "source": "SDN",
+                        "sourceId": "23043",
+                        "name": "Adil Abduh Fari Uthman AL-DHUBHANI",
+                        "nameFormatted": "adil abduh fari uthman al dhubhani",
+                        "entityLink": "https://www.ofac-api.com/entities/sdn-adil-abduh-fari-uthman-al-dhubhani",
+                        "alias": [
+                            {
+                                "id": "36192",
+                                "name": "ABU AL-ABBAS",
+                                "lastName": "ABU AL-ABBAS",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36193",
+                                "name": "Adil Abdu Bin-Fari BIN-UTHMAN",
+                                "firstName": "Adil Abdu Bin-Fari",
+                                "lastName": "BIN-UTHMAN",
+                                "comment": "strong"
+                            },
+                            {
+                                "id": "36194",
+                                "name": "Adil Muhammad Abdu FARI",
+                                "firstName": "Adil Muhammad Abdu",
+                                "lastName": "FARI",
+                                "comment": "strong"
+                            },
+                            {
+                                "id": "36195",
+                                "name": "Adil Fari AL-MALKAB",
+                                "firstName": "Adil Fari",
+                                "lastName": "AL-MALKAB",
+                                "comment": "strong"
+                            },
+                            {
+                                "id": "36196",
+                                "name": "ADIL ABD FARI",
+                                "lastName": "ADIL ABD FARI",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36197",
+                                "name": "Adil Mohammad Abdu FAZI",
+                                "firstName": "Adil Mohammad Abdu",
+                                "lastName": "FAZI",
+                                "comment": "strong"
+                            },
+                            {
+                                "id": "36199",
+                                "name": "ADIL ABDU FAARI'A",
+                                "lastName": "ADIL ABDU FAARI'A",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36200",
+                                "name": "ADIL ABDU FAREA",
+                                "lastName": "ADIL ABDU FAREA",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36201",
+                                "name": "ADIL ABDU FAAREA",
+                                "lastName": "ADIL ABDU FAAREA",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36202",
+                                "name": "ADIL ABDU FARIA",
+                                "lastName": "ADIL ABDU FARIA",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36203",
+                                "name": "'ADIL 'ABDIH FAR'A",
+                                "lastName": "'ADIL 'ABDIH FAR'A",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36204",
+                                "name": "Adil Abd Fari AL-MAKANI",
+                                "firstName": "Adil Abd Fari",
+                                "lastName": "AL-MAKANI",
+                                "comment": "strong"
+                            },
+                            {
+                                "id": "36205",
+                                "name": "FARI, Abu-al-Abbas Adil Abdu",
+                                "lastName": "FARI, Abu-al-Abbas Adil Abdu",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36206",
+                                "name": "FARI, Abu-al-Abbas Adil Abduh",
+                                "lastName": "FARI, Abu-al-Abbas Adil Abduh",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36207",
+                                "name": "AMIR MUMININ",
+                                "lastName": "AMIR MUMININ",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36208",
+                                "name": "AMIR MUMINEN",
+                                "lastName": "AMIR MUMINEN",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36311",
+                                "name": "ADIL ABDAH FARI",
+                                "lastName": "ADIL ABDAH FARI",
+                                "comment": "weak"
+                            },
+                            {
+                                "id": "36312",
+                                "name": "ADEL ABDUH FAREA'A",
+                                "lastName": "ADEL ABDUH FAREA'A",
+                                "comment": "weak"
+                            }
+                        ],
+                        "programs": [
+                            "SDGT"
+                        ],
+                        "remarks": "(Linked To: AL-QA'IDA IN THE ARABIAN PENINSULA; Linked To: ISIL-YEMEN)",
+                        "addresses": [
+                            {
+                                "id": "34788",
+                                "city": "Ta'izz City",
+                                "stateOrProvince": "Ta'izz Governorate",
+                                "country": "Yemen",
+                                "fullAddress": "Ta'izz City, Ta'izz Governorate Yemen"
+                            },
+                            {
+                                "id": "34789",
+                                "address1": "Almqwat Mahtah Ahmed Sif",
+                                "city": "Taiz City",
+                                "stateOrProvince": "Taiz Governorate",
+                                "country": "Yemen",
+                                "fullAddress": "Almqwat Mahtah Ahmed Sif, Taiz City, Taiz Governorate Yemen"
+                            }
+                        ],
+                        "identifications": [
+                            {
+                                "id": "14475",
+                                "type": "National ID No.",
+                                "idNumber": "01010013602",
+                                "country": "Yemen"
+                            }
+                        ],
+                        "personDetails": {
+                            "firstName": "Adil Abduh Fari Uthman",
+                            "lastName": "AL-DHUBHANI",
+                            "gender": "Male",
+                            "birthDates": [
+                                "15 Jul 1963",
+                                "1971"
+                            ],
+                            "citizenships": [],
+                            "nationalities": [
+                                "Yemen"
+                            ],
+                            "positions": []
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

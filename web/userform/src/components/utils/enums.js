@@ -1,5 +1,6 @@
 export const inputFieldType = {
     FirstName: 'firstName',
     LastName: 'lastName',
-    Country: 'country'
+    Country: 'country',
+    BirthDay: 'birthDay'
 }

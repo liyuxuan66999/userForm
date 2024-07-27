@@ -1,15 +1,17 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useContext } from 'react';
 import { Stack, Button } from '@mui/material';
 import { FormInputField } from './userFormComponents/FormInputField';
 import { inputFieldType } from './utils/enums';
-import axios from 'axios';
+import { SearchResultsContext } from '../provider/SearchResultsContext';
 
 export const UserForm = () => {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
-        country: ''
+        country: '',
+        birthDay: ''
     });
+    const {setSearchResults} = useContext(SearchResultsContext);
     const handleOnChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -17,34 +19,35 @@ export const UserForm = () => {
             [name]: value
         }));
     };
-    
+
     const handleSubmit = useCallback(async (e) => {
         e.preventDefault();
-    
-        const { firstName, lastName, country } = formData;
-    
-        // Check if any of the fields are falsy
-        if (!firstName || !lastName || !country) {
-          alert('Please fill out all fields.');
-          return;
+
+        const { firstName, lastName, country, birthDay } = formData;
+        if (!firstName.length || !lastName.length || !country.length || !birthDay.length) {
+            alert('Please fill out all fields.');
+            return;
         }
-    
+
         try {
-          // Submit the values to the backend API
-          const response = await axios.post('https://localhost:5000/validateUser', {
-            firstName,
-            lastName,
-            country
-          });
-    
-          // Parse the response field from the payload
-          const { data } = response;
-          console.log('Response:', data);
-          // Handle the response as needed
+            const response = await fetch('http://localhost:5000/validateUser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    firstName,
+                    lastName,
+                    country,
+                    birthDay
+                })
+            });
+            const data = await response.json();
+            setSearchResults(data);
         } catch (error) {
-          console.error('Error submitting form:', error);
+            console.error('Error submitting form:', error);
         }
-      }, [formData]);
+    }, [formData]);
 
     return (
         <form onSubmit={handleSubmit}>
@@ -53,6 +56,7 @@ export const UserForm = () => {
                     <FormInputField formData={formData} fieldType={inputFieldType.FirstName} handleOnChange={handleOnChange} />
                     <FormInputField formData={formData} fieldType={inputFieldType.LastName} handleOnChange={handleOnChange} />
                 </Stack>
+                <FormInputField formData={formData} fieldType={inputFieldType.BirthDay} handleOnChange={handleOnChange} />
                 <FormInputField formData={formData} fieldType={inputFieldType.Country} handleOnChange={handleOnChange} />
                 <Button variant="contained" color="primary" type="submit">
                     Submit

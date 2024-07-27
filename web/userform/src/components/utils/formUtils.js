@@ -8,6 +8,8 @@ export const getFieldLabel = (fieldType) => {
             return 'Last Name';
         case inputFieldType.Country:
             return 'Country';
+        case inputFieldType.BirthDay:
+            return 'Birth Day';
         default:
             return null;
     }
