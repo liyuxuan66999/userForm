@@ -16,7 +16,10 @@ In the web/userform/ run:
 
 ### `test`
 Valid case:
-First Name: Abu
-Last Name: Abbas
-Birth Day: 1948-12-10
-Country: Senegal
+First Name: Abu;
+
+Last Name: Abbas;
+
+Birth Day: 1948-12-10;
+
+Country: Senegal;
