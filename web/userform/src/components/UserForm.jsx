@@ -3,6 +3,8 @@ import { Stack, Button } from '@mui/material';
 import { FormInputField } from './userFormComponents/FormInputField';
 import { inputFieldType } from './utils/enums';
 import { SearchResultsContext } from '../provider/SearchResultsContext';
+import { useNavigate  } from 'react-router-dom';
+import { isValidDate } from './utils/formUtils';
 
 export const UserForm = () => {
     const [formData, setFormData] = useState({
@@ -12,6 +14,7 @@ export const UserForm = () => {
         birthDay: ''
     });
     const {setSearchResults} = useContext(SearchResultsContext);
+    const navigate = useNavigate();
     const handleOnChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -29,6 +32,11 @@ export const UserForm = () => {
             return;
         }
 
+        if (!isValidDate(birthDay)) {
+            alert('Please enter a valid date in yyyy-mm-dd format.');
+            return;
+        }
+
         try {
             const response = await fetch('http://localhost:5000/validateUser', {
                 method: 'POST',
@@ -42,8 +50,9 @@ export const UserForm = () => {
                     birthDay
                 })
             });
-            const data = await response.json();
-            setSearchResults(data);
+            const {matchSummaries} = await response.json();
+            setSearchResults(matchSummaries || []);
+            navigate('/searchResults');
         } catch (error) {
             console.error('Error submitting form:', error);
         }
