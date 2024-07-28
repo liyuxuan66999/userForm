@@ -9,6 +9,17 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.sendFile(
+        path.join(__dirname, '../web/build/index.html'),
+        function (err) {
+            if (err) {
+                res.status(500).send(err)
+            }
+        }
+    );
+});
+
 app.post('/validateUser', async (req, res) => {
     const { firstName, lastName, country, birthDay } = req.body;
     console.log('Request:', req.body);
