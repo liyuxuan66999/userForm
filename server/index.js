@@ -3,13 +3,14 @@ const bodyParser = require('body-parser');
 const { default: axios } = require('axios');
 const cors = require('cors'); 
 const {ofacApi, ofacApiKey} = require('./utils/enums');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     res.sendFile(
         path.join(__dirname, '../web/build/index.html'),
         function (err) {
