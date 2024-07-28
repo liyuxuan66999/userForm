@@ -62,7 +62,7 @@ export const UserForm = () => {
         } catch (error) {
             console.error('Error submitting form:', error);
         }
-    }, [formData]);
+    }, [formData, navigate]);
 
     return (
         <form onSubmit={handleSubmit}>

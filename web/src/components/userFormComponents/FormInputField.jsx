@@ -5,7 +5,7 @@ import { getFieldLabel } from '../utils/formUtils';
 
 export const FormInputField = ({formData, fieldType, handleOnChange}) => {
     const fieldLabel = getFieldLabel(fieldType);
-    return useMemo(() => (
+    return(
         <FormControl fullWidth>
           <TextField
             label={fieldLabel}
@@ -16,5 +16,5 @@ export const FormInputField = ({formData, fieldType, handleOnChange}) => {
             onChange={handleOnChange}
           />
         </FormControl>
-    ), [fieldLabel, formData[fieldType], handleOnChange]);
+    );
 };

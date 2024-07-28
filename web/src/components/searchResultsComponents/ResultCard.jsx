@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 
-import { Card, CardContent, Typography, Stack } from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
 import { SearchResultTypes } from "./utils/enums";
 import { HitsIndicator } from "./HitsIndicator";
 
