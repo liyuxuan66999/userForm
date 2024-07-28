@@ -4,9 +4,15 @@ import { SearchResultsContext } from "./SearchResultsContext";
 
 export const SearchResultsProvider = ({ children }) => {
     const [searchResults, setSearchResults] = useState([]);
+    const [searchError, setSearchError] = useState(null);
     console.log('searchResults', searchResults);
     const context = useMemo(
-        () => ({ searchResults, setSearchResults }),
+        () => ({ 
+            searchResults, 
+            searchError, 
+            setSearchResults,
+            setSearchError 
+        }),
         [searchResults, setSearchResults]
     );
 

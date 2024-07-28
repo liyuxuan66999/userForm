@@ -13,7 +13,7 @@ export const UserForm = () => {
         country: '',
         birthDay: ''
     });
-    const {setSearchResults} = useContext(SearchResultsContext);
+    const {setSearchResults, setSearchError} = useContext(SearchResultsContext);
     const navigate = useNavigate();
     const handleOnChange = (e) => {
         const { name, value } = e.target;
@@ -50,8 +50,14 @@ export const UserForm = () => {
                     birthDay
                 })
             });
-            const {matchSummaries} = await response.json();
-            setSearchResults(matchSummaries || []);
+            if(response.ok){
+                const {matchSummaries} = await response.json();
+                setSearchResults([...matchSummaries]);
+            } else {
+                const {error} = await response.json();
+                setSearchError(error);
+            }
+            
             navigate('/searchResults');
         } catch (error) {
             console.error('Error submitting form:', error);
