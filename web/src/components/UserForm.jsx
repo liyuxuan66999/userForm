@@ -3,8 +3,12 @@ import { Stack, Button } from '@mui/material';
 import { FormInputField } from './userFormComponents/FormInputField';
 import { inputFieldType } from './utils/enums';
 import { SearchResultsContext } from '../provider/SearchResultsContext';
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { isValidDate } from './utils/formUtils';
+
+const backendUrl = process.env.NODE_ENV === 'development'
+            ? "https://trybree-userform-app-58d3c83476e0.herokuapp.com"
+            : "http://localhost:5000";
 
 export const UserForm = () => {
     const [formData, setFormData] = useState({
@@ -13,7 +17,7 @@ export const UserForm = () => {
         country: '',
         birthDay: ''
     });
-    const {setSearchResults, setSearchError} = useContext(SearchResultsContext);
+    const { setSearchResults, setSearchError } = useContext(SearchResultsContext);
     const navigate = useNavigate();
     const handleOnChange = (e) => {
         const { name, value } = e.target;
@@ -36,9 +40,11 @@ export const UserForm = () => {
             alert('Please enter a valid date in yyyy-mm-dd format.');
             return;
         }
-
+        
+        console.log('process.env.NODE_ENV:', process.env.NODE_ENV);
+        console.log('backendUrl:', backendUrl);
         try {
-            const response = await fetch('http://localhost:5000/validateUser', {
+            const response = await fetch(`${backendUrl}/validateUser`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -50,14 +56,14 @@ export const UserForm = () => {
                     birthDay
                 })
             });
-            if(response.ok){
-                const {matchSummaries} = await response.json();
+            if (response.ok) {
+                const { matchSummaries } = await response.json();
                 setSearchResults([...matchSummaries]);
             } else {
-                const {error} = await response.json();
+                const { error } = await response.json();
                 setSearchError(error);
             }
-            
+
             navigate('/searchResults');
         } catch (error) {
             console.error('Error submitting form:', error);
