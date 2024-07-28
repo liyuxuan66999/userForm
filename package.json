@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "client": "cd web && npm start",
+    "server": "cd server && node index.js",
+    "build": "cd web && npm run build",
+    "install-client": "cd web && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "cd server && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
