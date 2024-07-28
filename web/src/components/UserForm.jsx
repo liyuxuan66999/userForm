@@ -6,7 +6,7 @@ import { SearchResultsContext } from '../provider/SearchResultsContext';
 import { useNavigate } from 'react-router-dom';
 import { isValidDate } from './utils/formUtils';
 
-const backendUrl = process.env.NODE_ENV === 'development'
+const backendUrl = process.env.NODE_ENV === 'production'
             ? "https://trybree-userform-app-58d3c83476e0.herokuapp.com"
             : "http://localhost:5000";
 
